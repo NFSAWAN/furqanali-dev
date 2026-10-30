@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furqan Ali – Senior iOS, Android &amp; Flutter Developer</title>
+<meta name="description" content="Furqan Ali is a senior mobile app developer with 10+ years of experience building iOS, Android and Flutter apps from idea to App Store and Google Play launch.">
+<meta property="og:title" content="Furqan Ali – Senior Mobile App Developer">
+<meta property="og:description" content="iOS, Android and Flutter apps from idea to launch. 10+ years, 70+ apps.">
+<meta property="og:image" content="images/thrive.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230F2E76'/><text x='50' y='68' font-size='54' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>F</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F2E76; --navy-2:#14398F; --blue:#2081F8; --soft:#E8F1FE;
+    --ink:#0F1729; --muted:#5C6F8A; --line:#DFE5EC; --bg:#FFFFFF; --wash:#F6F8FB; --card:#FFFFFF;
+    --head:"Sora",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#E8EEF8; --muted:#9AAAC2; --line:#243149; --bg:#0B1220; --wash:#0F182A; --card:#111C30; --soft:#16284A; }
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:76px}
+  body{margin:0;font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:var(--head);margin:0;letter-spacing:-.02em}
+  p{margin:0}
+  :focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  section{padding:84px 0}
+  .alt{background:var(--wash)}
+  .eyebrow{display:inline-block;background:var(--soft);color:var(--blue);font-size:.75rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:16px}
+  .head{max-width:680px;margin-bottom:40px}
+  .head h2{font-size:clamp(1.7rem,3.2vw,2.2rem)}
+  .head p{color:var(--muted);margin-top:10px;font-size:1.05rem}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;border-radius:12px;padding:13px 22px;border:1.5px solid transparent;transition:.15s}
+  .btn-primary{background:#fff;color:var(--navy)}
+  .btn-primary:hover{background:#E8F1FE}
+  .btn-ghost{color:#fff;border-color:rgba(255,255,255,.35)}
+  .btn-ghost:hover{border-color:#fff}
+
+  /* nav */
+  header{position:sticky;top:0;z-index:20;background:rgba(15,46,118,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:var(--head);font-weight:800;color:#fff;text-decoration:none;font-size:1.1rem}
+  .brand span{color:#7FB2FF}
+  .menu{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+  .menu a{color:#DCE8FF;text-decoration:none;font-size:.95rem;font-weight:500}
+  .menu a:hover{color:#fff}
+
+  /* hero */
+  .hero{background:linear-gradient(165deg,var(--navy) 0%,var(--navy-2) 55%,#1E4FB8 100%);color:#fff;padding:80px 0 72px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .hero .tag{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#9CC0FF;font-weight:600}
+  .hero h1{font-size:clamp(2.6rem,6vw,4rem);font-weight:800;line-height:1.03;margin:14px 0 10px;color:#fff}
+  .hero .sub{font-family:var(--head);font-size:1.25rem;color:#DCE8FF;font-weight:600}
+  .hero p.lead{color:#C9DAF8;font-size:1.08rem;margin:22px 0 30px;max-width:560px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+  .stats div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:18px 16px}
+  .stats b{display:block;font-family:var(--head);font-size:1.9rem;font-weight:800}
+  .stats span{font-size:.85rem;color:#BFD4F7}
+  .hero-shot{border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.25);box-shadow:0 30px 60px -20px rgba(0,0,0,.45)}
+
+  /* skills */
+  .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card h3{font-size:1.05rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+  .chips span{font-size:.8rem;background:var(--wash);border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted)}
+
+  /* apps */
+  .app{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+  .app:last-child{border-bottom:0}
+  .app:nth-child(even) .app-img{order:2}
+  .app-img{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 40px -24px rgba(15,46,118,.35)}
+  .kind{font-size:.8rem;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:.05em}
+  .app h3{font-size:1.5rem;margin:6px 0 8px}
+  .role{display:inline-block;font-size:.78rem;font-weight:600;color:#15803D;background:#DCFCE7;border-radius:999px;padding:3px 11px;margin-bottom:12px}
+  .role.team{color:#6B4FD8;background:#EEE9FF}
+  .app p{color:var(--muted)}
+  .app ul{margin:12px 0 0;padding-left:20px;color:var(--muted)}
+  .tech{font-size:.9rem;color:var(--muted);margin-top:12px}
+  .tech b{color:var(--ink)}
+  .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+  .links a{font-weight:600;font-size:.92rem;text-decoration:none;background:var(--navy);color:#fff;border-radius:10px;padding:9px 16px}
+  .links a.ol{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
+
+  /* web */
+  .webgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .web{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+  .web img{aspect-ratio:4/3;object-fit:cover;border-bottom:1px solid var(--line)}
+  .web div{padding:20px;display:flex;flex-direction:column;flex:1}
+  .web h3{font-size:1.15rem;margin:4px 0 6px}
+  .web p{color:var(--muted);font-size:.95rem;flex:1}
+
+  /* experience */
+  .timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .timeline .when{font-size:.85rem;color:var(--blue);font-weight:600}
+
+  /* contact */
+  .contact{background:linear-gradient(160deg,var(--navy),#123A92);color:#fff;border-radius:24px;padding:52px;text-align:center}
+  .contact h2{color:#fff;font-size:clamp(1.7rem,3.4vw,2.3rem)}
+  .contact p{color:#C9DAF8;max-width:620px;margin:14px auto 28px;font-size:1.05rem}
+  .contact .hero-actions{justify-content:center}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;padding:36px 0}
+
+  @media (max-width:900px){
+    .hero-grid,.app{grid-template-columns:1fr}
+    .app:nth-child(even) .app-img{order:0}
+    .skills{grid-template-columns:1fr 1fr}
+    .stats{grid-template-columns:1fr 1fr}
+    .menu{display:none}
+  }
+  @media (max-width:600px){
+    section{padding:60px 0}
+    .skills,.webgrid,.timeline{grid-template-columns:1fr}
+    .contact{padding:34px 20px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a href="#top" class="brand">Furqan<span>Ali</span></a>
+    <ul class="menu">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="#web">Web</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="tag">Mobile App Developer · Lahore, Pakistan · Remote worldwide</div>
+      <h1>Furqan Ali</h1>
+      <div class="sub">Senior iOS, Android &amp; Flutter Developer</div>
+      <p class="lead">I build mobile apps from the first idea to App Store and Google Play launch: native iOS (Swift), native Android (Kotlin), cross-platform (Flutter, React Native), plus the APIs, backends and integrations behind them.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#apps">See my apps</a>
+        <a class="btn btn-ghost" href="#contact">Contact me</a>
+      </div>
+      <div class="stats">
+        <div><b>10+</b><span>Years in mobile</span></div>
+        <div><b>70+</b><span>Apps delivered</span></div>
+        <div><b>3</b><span>iOS, Android, Web</span></div>
+        <div><b>6</b><span>Countries with clients</span></div>
+      </div>
+    </div>
+    <div class="hero-shot"><img src="images/thrive.jpg" alt="Thrive app screens: shared garden, activities and AI guide"></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">What I do</span><h2>Skills &amp; services</h2><p>One developer for the whole journey: development, backend integration, testing and store launch.</p></div>
+    <div class="skills">
+      <div class="card"><h3>Cross-platform apps</h3><p>One codebase for iOS and Android, with native modules where performance matters.</p><div class="chips"><span>Flutter</span><span>Dart</span><span>BLoC / Cubit</span><span>React Native</span></div></div>
+      <div class="card"><h3>Native iOS</h3><p>Fast, polished iPhone and iPad apps that follow Apple’s guidelines.</p><div class="chips"><span>Swift</span><span>SwiftUI</span><span>UIKit</span><span>Combine</span><span>Core Data</span></div></div>
+      <div class="card"><h3>Native Android</h3><p>Modern Android apps for phones, tablets and Android TV.</p><div class="chips"><span>Kotlin</span><span>Jetpack Compose</span><span>Java</span><span>Coroutines</span><span>Room</span></div></div>
+      <div class="card"><h3>APIs &amp; backend</h3><p>REST integration, real-time features and backends that power the app.</p><div class="chips"><span>REST APIs</span><span>Node.js</span><span>NestJS</span><span>MongoDB</span><span>Socket.IO</span><span>Firebase</span></div></div>
+      <div class="card"><h3>Payments &amp; subscriptions</h3><p>In-app purchases, subscriptions, free trials and payment gateways.</p><div class="chips"><span>In-app purchases</span><span>Subscriptions</span><span>Stripe</span></div></div>
+      <div class="card"><h3>Launch &amp; quality</h3><p>Real-device testing, crash monitoring and store submission until approval.</p><div class="chips"><span>Google Play</span><span>App Store</span><span>TestFlight</span><span>Crashlytics</span><span>CI/CD</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPS -->
+<section id="apps" class="alt">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Featured mobile apps</span><h2>Apps live on the stores</h2><p>Open any app on Google Play or the App Store.</p></div>
+    <div>
+      <article class="app">
+        <div class="app-img"><img src="images/thrive.jpg" alt="Thrive app screens" loading="lazy"></div>
+        <div>
+          <span class="kind">Flutter · Android · Wellness</span>
+          <h3>Thrive – Relationship Guide</h3>
+          <span class="role">Solo · built end to end</span>
+          <p>Couples app that builds closeness through small daily habits.</p>
+          <ul><li>Shared garden that grows through 11 stages</li><li>Daily check-ins, streaks and milestones</li><li>Alex, an AI relationship guide</li><li>Partner linking, community, subscriptions and free trial</li></ul>
+          <p class="tech"><b>Tech:</b> Flutter, AI integration, subscriptions, push notifications</p>
+          <div class="links"><a href="https://play.google.com/store/apps/details?id=com.krevocreators.thrive" target="_blank" rel="noopener">Google Play</a></div>
+        </div>
+      </article>
+      <article class="app">
+        <div class="app-img"><img src="images/kinfolk.jpg" alt="Kinfolk app screens" loading="lazy"></div>
+        <div>
+          <span class="kind">Native iOS &amp; Android · Social</span>
+          <h3>Kinfolk – Connect with Family</h3>
+          <span class="role">Native iOS &amp; Android developer</span>
+          <p>Private family app for memories, traditions and events.</p>
+          <ul><li>Visual family tree with relationship types</li><li>Photo, video and audio stories</li><li>Story and tradition questionnaires</li><li>Family event planning and notifications</li></ul>
+          <p class="tech"><b>Tech:</b> Swift, Kotlin, REST APIs, push notifications</p>
+          <div class="links"><a href="https://apps.apple.com/gb/app/kinfolk-connect-with-family/id6471194714" target="_blank" rel="noopener">App Store</a><a class="ol" href="https://play.google.com/store/apps/details?id=com.kinfolk.world" target="_blank" rel="noopener">Google Play</a></div>
+        </div>
+      </article>
+      <article class="app">
+        <div class="app-img"><img src="images/axehrm.jpg" alt="AxeHrm app screens" loading="lazy"></div>
+        <div>
+          <span class="kind">Flutter · iOS · HR</span>
+          <h3>AxeHrm – HR &amp; Attendance</h3>
+          <span class="role">Solo · built end to end</span>
+          <p>HR app that replaces manual attendance and paperwork.</p>
+          <ul><li>Clock-in, clock-out and breaks</li><li>Leave requests with manager approval</li><li>Salary slips and request workflows</li><li>Attendance and leave reports</li></ul>
+          <p class="tech"><b>Tech:</b> Flutter, BLoC, REST APIs</p>
+          <div class="links"><a href="https://apps.apple.com/it/app/axehrm/id6499089611" target="_blank" rel="noopener">App Store</a></div>
+        </div>
+      </article>
+      <article class="app">
+        <div class="app-img"><img src="images/finbuddy.jpg" alt="FinBuddy app screens" loading="lazy"></div>
+        <div>
+          <span class="kind">iOS · Finance</span>
+          <h3>FinBuddy – Spending Tracker</h3>
+          <span class="role team">Team project</span>
+          <p>Personal finance app with budgets, savings goals, bill reminders and multi-currency accounts. Rated 5.0 on the App Store.</p>
+          <div class="links"><a href="https://apps.apple.com/pk/app/finbuddy-spending-tracker/id6761130204" target="_blank" rel="noopener">App Store</a></div>
+        </div>
+      </article>
+      <article class="app">
+        <div class="app-img"><img src="images/hornsby.jpg" alt="Hornsby Beekeeping app screens" loading="lazy"></div>
+        <div>
+          <span class="kind">iOS · E-commerce</span>
+          <h3>Hornsby Beekeeping Supplies</h3>
+          <span class="role team">Team project</span>
+          <p>Shopping app for an Australian beekeeping store: live catalogue, search and filters, wishlists, cart, order history and store locator.</p>
+          <div class="links"><a href="https://apps.apple.com/pk/app/hornsby-beekeeping-supplies/id6807860554" target="_blank" rel="noopener">App Store</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WEB -->
+<section id="web">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Web projects</span><h2>Web platforms &amp; websites</h2><p>Team projects, built and launched.</p></div>
+    <div class="webgrid">
+      <div class="web"><img src="images/roohly.jpg" alt="Roohly website" loading="lazy"><div><span class="kind">Web platform · Matrimony</span><h3>Roohly</h3><p>Rishta platform with verified profiles, proposal search, messaging and subscriptions.</p><div class="links"><a href="https://roohly.com" target="_blank" rel="noopener">roohly.com</a></div></div></div>
+      <div class="web"><img src="images/meerax.jpg" alt="Meerax website" loading="lazy"><div><span class="kind">E-commerce</span><h3>Meerax</h3><p>Online store for a kidswear brand with categories, product pages and checkout.</p><div class="links"><a href="https://meerax.com" target="_blank" rel="noopener">meerax.com</a></div></div></div>
+      <div class="web"><img src="images/dr-sohaib-arshad.jpg" alt="Dr. Sohaib Arshad website" loading="lazy"><div><span class="kind">Healthcare</span><h3>Dr. Sohaib Arshad</h3><p>Dental clinic website with services, clinic details and appointment booking.</p><div class="links"><a href="https://drsohaibarshad.com" target="_blank" rel="noopener">drsohaibarshad.com</a></div></div></div>
+      <div class="web"><img src="images/dr-asif-mushtaq.jpg" alt="Dr. Asif Mushtaq website" loading="lazy"><div><span class="kind">Healthcare</span><h3>Dr. Asif Mushtaq</h3><p>Prosthodontist portfolio with services, publications, gallery and appointments.</p><div class="links"><a href="https://drasifmushtaq.github.io" target="_blank" rel="noopener">drasifmushtaq.github.io</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="alt">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Experience</span><h2>10+ years building mobile apps</h2><p>From Windows Phone in 2013 to Flutter, SwiftUI and Jetpack Compose today.</p></div>
+    <div class="timeline">
+      <div class="card"><div class="when">2022 – present</div><h3>Senior Mobile Application Developer</h3><p>Native iOS and Android, Flutter, point-of-sale and real-time apps, subscription products.</p></div>
+      <div class="card"><div class="when">2020 – 2022</div><h3>Mobile Application Developer</h3><p>Enterprise Android apps, React Native apps, REST APIs and full Firebase integration.</p></div>
+      <div class="card"><div class="when">2015 – 2020</div><h3>Mobile Team Lead</h3><p>Led iOS and Android developers: sprint planning, code reviews, MVVM/VIPER architecture and mentoring.</p></div>
+      <div class="card"><div class="when">International</div><h3>Remote &amp; on-site work</h3><p>Contract work for a Swedish technology company and on-site consulting in Dubai; clients across the UK, Europe, the Middle East, the US and Australia.</p></div>
+    </div>
+    <div class="card" style="margin-top:20px"><div class="when">2010 – 2014</div><h3>Bachelor of Computer Science</h3><p>GC University Lahore</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Let’s build your app</h2>
+      <p>Have an idea, an MVP that needs to become production-ready, or an app that needs fixing before launch? I can help you plan it, build it and get it live.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:nfs.awan@gmail.com?subject=App%20project%20enquiry">Email me</a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/furqan-ali-b2869362" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Furqan Ali · Senior Mobile App Developer</footer>
+</body>
+</html>
